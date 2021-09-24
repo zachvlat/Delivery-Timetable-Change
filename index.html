@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milkman Dates</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="opentime">
+        <h5>Δ-Π: 08:00-00:00, Σ: 09:00-21:00, Κ:
+            10:00-18:00</h5>
+    </div>
+    <header>
+        <div>
+            <img src="https://www.celestino.gr/icons/celestino.svg" alt="celestinologo"
+                style="width:151px;height:25px;">
+            <span class="righticons">
+                <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-user-o fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-shopping-bag fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-align-justify fa-2x" aria-hidden="true"></i>
+            </span>
+        </div>
+        <h4>
+            DELIVERY TRACKING<i class="fa fa-times fa-lg" aria-hidden="true" style="float:right;"></i>
+        </h4>
+    </header>
+    <br>
+    <br>
+    <main>
+        <div>
+            <h6>ΚΑΤΑΣΤΑΣΗ ΑΠΟΣΤΟΛΗΣ<br><strong>ΠΡΟΣ ΠΑΡΑΔΟΣΗ</strong></h6>
+
+        </div>
+        <div class="today">
+            <h2>
+                ΣΗΜΕΡΑ
+            </h2>
+        </div>
+        <br>
+        <p class="eta">Εκτιμώμενη ώρα παράδοσης:</p>
+        <h1>15:00</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="delivery-lines">
+            <div>
+                <span>
+                    <hr class="main-line">
+                </span><span><img style="padding-left: 100px;" src="/Dipjv1A - Imgur.png" alt="line"></span>
+            </div>
+            <span style="float:left;">15:00</span><span style="float:right;">18:00</span>
+        </div>
+    </main>
+    <footer>
+        <div class="total-price">
+            <p>ΟΦΕΙΛΟΜΕΝΟ ΠΟΣΟ: <strong>€109,91</strong></p>
+        </div>
+        <div class="date-change">
+            <p><i class="fa fa-calendar fa-lg" aria-hidden="true" style="padding-right:10px;"
+                    onclick="function()"></i>ΑΛΛΑΓΗ ΗΜ/ΝΙΑΣ - ΩΡΑΣ</p>
+        </div>
+
+
+        <!-- calendar -->
+
+        <div hidden class="light" style="height:500px;">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <span class="month-picker" id="month-picker">February</span>
+                    <div class="year-picker">
+                        <span class="year-change" id="prev-year">
+                            <pre><i class="fa fa-angle-up" aria-hidden="true"></i></pre>
+                        </span>
+                        <span id="year">2021</span>
+                        <span class="year-change" id="next-year">
+                            <pre><i class="fa fa-angle-down" aria-hidden="true"></i></pre>
+                        </span>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <div class="calendar-week-day">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+                <div class="calendar-footer">
+                    <span><button class="cancelation" style="background-color:#F8F7FA;color:black;"
+                            onclick="function()">Ακύρωση</button></span>
+                    <span><button class="milk-hours" onclick="function()">Επιλογή ώρας</button></span>
+                </div>
+                <div class="month-list"></div>
+            </div>
+
+
+            <div hidden class="milkman-table">
+                <div class="grid-container-milkman">
+                    <div class="delivery-price-milkman">
+                        <sup>ΔΩΡΕΑΝ</sup>
+                        <a href="#">
+                            <div class="grid-item-milkman">09:00-20:00</div>
+                        </a>
+                    </div>
+                    <div class="delivery-price-milkman">
+                        <sup>+ €1</sup>
+                        <a href="#">
+                            <div class="grid-item-milkman">09:00-12:00</div>
+                        </a>
+                    </div>
+                    <div class="delivery-price-milkman">
+                        <sup>+ €1</sup>
+                        <a href="#">
+                            <div class="grid-item-milkman">15:00-18:00</div>
+                        </a>
+                    </div>
+                    <div class="delivery-price-milkman">
+                        <sup>+ €1</sup>
+                        <a href="#">
+                            <div class="grid-item-milkman">09:00-20:00</div>
+                        </a>
+                    </div>
+                    <div class="delivery-price-milkman">
+                        <sup>+ €1</sup>
+                        <a href="#">
+                            <div class="grid-item-milkman">09:00-12:00</div>
+                        </a>
+                    </div>
+                    <div class="delivery-price-milkman">
+                        <sup>+ €1</sup>
+                        <a href="#">
+                            <div class="grid-item-milkman">15:00-18:00</div>
+                        </a>
+                    </div>
+                    <div class="delivery-price-milkman">
+                        <sup>+1</sup>
+                        <a href="#">
+                            <div class="grid-item-milkman">09:00-20:00</div>
+                        </a>
+                    </div>
+                    <div class="delivery-price-milkman">
+                        <sup>+ €1</sup>
+                        <a href="#">
+                            <div class="grid-item-milkman">09:00-12:00</div>
+                        </a>
+                    </div>
+                    <div class="delivery-price-milkman">
+                        <sup>+ €1</sup>
+                        <a href="#">
+                            <div class="grid-item-milkman">15:00-18:00</div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="confirmation">
+                        <p>ΕΠΙΒΕΒΑΙΩΣΗ ΑΛΛΑΓΗΣ</p>
+                    </div>
+                </div>
+            </div>
+
+            <script src="app.js"></script>
+        </div>
+
+
+        <!-- end of calendar -->
+
+    </footer>
+</body>
+
+</html>
